@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Team</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f0f0;
+        padding: 30px;
+      }
+
+      @keyframes title {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        animation: title 1s ease;
+      }
+
+      .team {
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 1000px;
+        gap: 20px;
+        display: flex;
+      }
+
+      .card {
+        padding: 25px;
+        background: white;
+        border-radius: 10px;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 250px;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .card::before {
+        content: "Team";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 8px;
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        border-radius: 5px;
+      }
+
+      .card::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        margin: 10px auto 0;
+        border-radius: 5px;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .special {
+        align-self: flex-start;
+        flex-grow: 2;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+      }
+
+      button:focus {
+        outline: 3px solid gray;
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 15px;
+        }
+
+        .card {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Team</h1>
+    <div class="team">
+      <div class="card">
+        <h2>Shagor</h2>
+        <p>Frontend Developer</p>
+        <button>View Profile</button>
+      </div>
+      <div class="card special">
+        <h2>Rahim</h2>
+        <p>UI Degainer</p>
+        <button>View Profile</button>
+      </div>
+      <div class="card">
+        <h2>Kamal</h2>
+        <p>Backend Developer</p>
+        <button>View Profile</button>
+      </div>
+      <div class="card">
+        <h2>Hasan</h2>
+        <p>Web Degainer</p>
+        <button>View Profile</button>
+      </div>
+    </div>
+  </body>
+</html>

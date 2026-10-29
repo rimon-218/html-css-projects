@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" intial-scale="1.0" />
+    <meta
+      name="description"
+      content="একটি সম্পূর্ণ এইচটিএমএল প্রজেক্ট যেখানে সব কনসেপ্ট আছে"
+    />
+    <meta property="og:title" content="আমার অল-ইন-ওয়ান মাস্টার প্রজেক্ট" />
+    <meta
+      property="og:description"
+      content="এইচটিএমএল-এর ব ট্যাগ এবং অ্যাডভান্স কনসেপ্ট"
+    />
+    <meta
+      property="og:image"
+      content="https://rimonmd0908-svg.github.com.io/my-project"
+    />
+    <title>মাস্টার এইচটিএমএল প্রজেক্ট</title>
+  </head>
+  <body>
+    <header>
+      <h1>আমার মাস্টার ওয়েব পোর্টাল</h1>
+      <p>সবগুলো এইচটিএমএল প্রজেক্টের একটি নিখুত সমন্বয়</p>
+    </header>
+    <nav role="navigation" aria-label="প্রধান মেনু">
+      <a href="#portfolio">পোর্টফোলিও</a>
+      <a href="#menu">রেস্তোরা</a>
+      <a href="#gallery">মিডিয়া</a>
+      <a href="#survey">স্মার্ট ফর্ম</a>
+    </nav>
+    <main>
+      <section id="portfolio">
+        <h2>১. ব্যাক্তিগত পোর্টফোলিও</h2>
+        <img src="myphoto.jpg" width="250" alt="" />
+        <p>
+          স্বাগতম! আমি একজন অনুরাগী ওয়েব ডেভেলপার। এই পেজটি আমার শেখা সমস্ত
+          এইচটিএমএল ট্যাগের জীবন্ত প্রমাণ।
+        </p>
+        <a
+          href="rimonmd0908-svg.github.com.io/my-project"
+          target="_blank"
+          aria-label="গিটহাবে আমার প্রোফাইল দেখুন"
+          >আমার গিটহাব লিংক</a
+        >
+      </section>
+      <hr />
+      <section id="menu">
+        <h2>২.রেস্তোরা মেনু টেবিল</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>খাবারের নাম</th>
+              <th>মূল্য</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>স্পেশাল বিরিয়ানি</strong></td>
+              <td>২৫০</td>
+            </tr>
+            <tr>
+              <td><em>শাহী ফালুদা</em></td>
+              <td>১২০</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>আমাদের বৈশিষ্ঠ্য:</h3>
+        <ul>
+          <li>১০০% হালাল এবং ফ্রেশ কন্টেন্ট</li>
+          <li>রেসপনসিভ ও ইউজার-ফ্রেন্ডলি লেআউট</li>
+        </ul>
+      </section>
+      <hr />
+      <section id="gallery">
+        <h2>৩.মাল্টিমিডিয়া গ্যালারি</h2>
+        <h3>ইউটিউব ভিডিও (iframe):</h3>
+        <iframe
+          src="videoo.mp4"
+          width="350"
+          height="200"
+          frameborder="0"
+          allowfullscreen
+          title="Youtube video player"
+        ></iframe>
+        <h3>লোকাল ভিডিও এবং অডিও কন্ট্রোল</h3>
+        <video width="350" height="200" controls>
+          <source src="videoo.mp4" type="video/mp4" />
+          আপনার ব্রাউজার ভিডিও সার্পোট করে না।
+        </video>
+        <audio controls>
+          <source src="songg.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+      <hr />
+      <section id="survey">
+        <h2>৪.স্মার্ট জরিপ ফর্ম (ভ্যালিডেশন সহ)</h2>
+        <form action="#">
+          <p>
+            <label for="username">ইউজারনেম (অটোফোকাস):</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              autofocus
+              required
+              placeholder="আপনার ইউজারনেম দিন"
+            />
+          </p>
+          <p>
+            <label for="email">ইমেইল:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+            />
+          </p>
+          <p>
+            <label for="pass">পাসওয়ার্ড (কমপক্কে ৮টি অক্কর):</label>
+            <input
+              type="password"
+              id="pass"
+              pettern=".{8,}"
+              title="পাসওয়ার্ড অবশ্যই ৮ অক্করের হতে হবে"
+              required
+              placeholder="........"
+            />
+          </p>
+          <p>
+            <label for="age">বয়স (১৮ থেকে ৪০ বছর):</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="40"
+              required
+              placeholder="আপনার বয়স"
+            />
+          </p>
+          <p>
+            <label>আপনার টেকনোলজি:</label>
+            <label for="html">HTML5</label>
+            <input type="radio" id="html" name="fav" checked />
+            <label for="css">CSS3</label>
+            <input type="radio" id="css" name="fav" />
+          </p>
+          <p>
+            <label for="city">শহর:</label>
+            <select id="city">
+              <option value="dhaka">ঢাকা</option>
+              <option value="chottogram">চট্রগ্রাম</option>
+            </select>
+          </p>
+          <p>
+            <label for="msg">মতামত:</label>
+            <textarea
+              id="msg"
+              rows="4"
+              placeholder="আপনার মূল্যবান মন্তব্য লিখুন..."
+            ></textarea>
+          </p>
+          <p>
+            <button type="submit">ডাটা সাবমিট করুন</button>
+          </p>
+        </form>
+      </section>
+      <hr />
+      <aside>
+        <h4>লেখক পরিচিতি</h4>
+        <p>
+          আমি একজন ভবিষ্যং ফুল-স্ট্যক ওয়েব ডেভেলপার। এইচটিএমএল-এর শতভাগ খুটিনাটি
+          শেষ করে আমি এখন সিএসএস শেখার জন্য প্রস্তুত।
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; ২০২৬ অল-ইন-ওয়ান মাস্টার প্রজেক্ট। সর্বস্বত্ব সংরক্কিত।</p>
+    </footer>
+  </body>
+</html>

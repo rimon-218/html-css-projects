@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item {
+  width: 4rem;
+  height: 4rem;
+  background-color: red;
+  flex-basis: 200px;
+  flex: 0 1 100px;
+}
+
+
+
+
+.container {
+  display: flex;
+  gap: 1rem;
+  background: grey;
+  width: 25rem;
+  height: 30rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
